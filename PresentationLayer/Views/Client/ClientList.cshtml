@@ -1,0 +1,51 @@
+﻿@model IEnumerable<PresentationLayer.ViewModels.ClientViewModel>
+
+@{
+    ViewBag.Title = "Clients";
+}
+
+<h2>ClientList</h2>
+
+<p>
+    @Html.ActionLink("Create New", "ClientCreate")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ClientID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClientName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OtherDetails)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClientID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClientName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OtherDetails)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "ClientEdit", new { id=item.ClientID }) |
+            @Html.ActionLink("Details", "ClientDetails", new { id=item.ClientID }) |
+            @Html.ActionLink("Delete", "DeleteClient", new { id=item.ClientID })
+        </td>
+    </tr>
+}
+
+</table>

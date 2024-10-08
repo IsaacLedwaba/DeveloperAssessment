@@ -1,0 +1,10 @@
+C:\Users\hp\Downloads\Assessment\Assessment\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll.config
+C:\Users\hp\Downloads\Assessment\Assessment\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+C:\Users\hp\Downloads\Assessment\Assessment\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+C:\Users\hp\Downloads\Assessment\Assessment\BusinessLogicLayer\bin\Debug\Data Access Layer.dll
+C:\Users\hp\Downloads\Assessment\Assessment\BusinessLogicLayer\bin\Debug\Data Access Layer.pdb
+C:\Users\hp\Downloads\Assessment\Assessment\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.AssemblyReference.cache
+C:\Users\hp\Downloads\Assessment\Assessment\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\hp\Downloads\Assessment\Assessment\BusinessLogicLayer\obj\Debug\Business.450209FB.Up2Date
+C:\Users\hp\Downloads\Assessment\Assessment\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+C:\Users\hp\Downloads\Assessment\Assessment\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb

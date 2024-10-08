@@ -1,0 +1,157 @@
+﻿@model PresentationLayer.ViewModels.ClientViewModel
+
+@{
+    ViewBag.Title = "Edit Client";
+}
+
+<h2>Edit Client</h2>
+
+
+<div>
+    @Html.ActionLink("Back to List", "ClientList")
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.ClientName)
+        @Html.TextBoxFor(m => m.ClientName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.ClientName)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.OtherDetails)
+        @Html.TextBoxFor(m => m.OtherDetails, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.OtherDetails)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Gender)
+        @Html.EnumDropDownListFor(m => m.Gender, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Gender)
+    </div>
+
+    <h4>Addresses</h4>
+    <div id="addresses">
+        @for (int i = 0; i < Model.Addresses.Count; i++)
+        {
+            @Html.HiddenFor(m => Model.Addresses[i].AddressID)
+            <div class="form-group">
+                @Html.LabelFor(m => Model.Addresses[i].Street)
+                @Html.TextBoxFor(m => Model.Addresses[i].Street, new { @class = "form-control", placeholder = "Street" })
+                @Html.ValidationMessageFor(m => Model.Addresses[i].Street)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => Model.Addresses[i].City)
+                @Html.TextBoxFor(m => Model.Addresses[i].City, new { @class = "form-control", placeholder = "City" })
+                @Html.ValidationMessageFor(m => Model.Addresses[i].City)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => Model.Addresses[i].PostalCode)
+                @Html.TextBoxFor(m => Model.Addresses[i].PostalCode, new { @class = "form-control", placeholder = "Postal Code" })
+                @Html.ValidationMessageFor(m => Model.Addresses[i].PostalCode)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => Model.Addresses[i].AddressType)
+                @Html.TextBoxFor(m => Model.Addresses[i].AddressType, new { @class = "form-control", placeholder = "Address Type" })
+                @Html.ValidationMessageFor(m => Model.Addresses[i].AddressType)
+            </div>
+            <button type="button" class="btn btn-danger remove-address">Remove Address</button>
+            <hr />
+        }
+    </div>
+    <button type="button" id="add-address" class="btn btn-primary">Add Address</button>
+
+    <h4>Contacts</h4>
+    <div id="contacts">
+        @for (int i = 0; i < Model.Contacts.Count; i++)
+        {
+            @Html.HiddenFor(m => Model.Contacts[i].ContactID)
+            <div class="form-group">
+                @Html.LabelFor(m => Model.Contacts[i].ContactNumber)
+                @Html.TextBoxFor(m => Model.Contacts[i].ContactNumber, new { @class = "form-control", placeholder = "Contact Value" })
+                @Html.ValidationMessageFor(m => Model.Contacts[i].ContactNumber)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => Model.Contacts[i].ContactType)
+                @Html.TextBoxFor(m => Model.Contacts[i].ContactType, new { @class = "form-control", placeholder = "Contact Type" })
+                @Html.ValidationMessageFor(m => Model.Contacts[i].ContactType)
+            </div>
+            <button type="button" class="btn btn-danger remove-contact">Remove Contact</button>
+            <hr />
+        }
+    </div>
+    <button type="button" id="add-contact" class="btn btn-primary">Add Contact</button>
+
+    <button type="submit" class="btn btn-success">Save Changes</button>
+}
+
+
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var addressIndex = @Model.Addresses.Count;
+            var contactIndex = @Model.Contacts.Count;
+
+            $('#add-address').click(function () {
+                var newAddressHtml = `
+                    <div class="form-group">
+                        <input type="hidden" name="Addresses[${addressIndex}].AddressID" value="0" />
+                        <label>Street</label>
+                        <input type="text" name="Addresses[${addressIndex}].Street" class="form-control" placeholder="Street" />
+                    </div>
+                    <div class="form-group">
+                        <label>City</label>
+                        <input type="text" name="Addresses[${addressIndex}].City" class="form-control" placeholder="City" />
+                    </div>
+                    <div class="form-group">
+                        <label>Postal Code</label>
+                        <input type="text" name="Addresses[${addressIndex}].PostalCode" class="form-control" placeholder="Postal Code" />
+                    </div>
+                    <div class="form-group">
+                        <label>Address Type</label>
+                        <input type="text" name="Addresses[${addressIndex}].AddressType" class="form-control" placeholder="Address Type" />
+                    </div>
+                    <button type="button" class="btn btn-danger remove-address">Remove Address</button>
+                    <hr />
+                `;
+                $('#addresses').append(newAddressHtml);
+                addressIndex++;
+            });
+
+            $(document).on('click', '.remove-address', function () {
+                $(this).closest('div.form-group').next('hr').remove();
+                $(this).closest('div.form-group').remove();
+            });
+
+            $('#add-contact').click(function () {
+                var newContactHtml = `
+                    <div class="form-group">
+                        <input type="hidden" name="Contacts[${contactIndex}].ContactID" value="0" />
+                        <label>Contact Value</label>
+                        <input type="text" name="Contacts[${contactIndex}].ContactNumber" class="form-control" placeholder="Contact Value" />
+                    </div>
+                    <div class="form-group">
+                        <label>Contact Type</label>
+                        <input type="text" name="Contacts[${contactIndex}].ContactType" class="form-control" placeholder="Contact Type" />
+                    </div>
+                    <button type="button" class="btn btn-danger remove-contact">Remove Contact</button>
+                    <hr />
+                `;
+                $('#contacts').append(newContactHtml);
+                contactIndex++;
+            });
+
+            $(document).on('click', '.remove-contact', function () {
+                $(this).closest('div.form-group').next('hr').remove();
+                $(this).closest('div.form-group').remove();
+            });
+        });
+    </script>
+
+    @Scripts.Render("~/bundles/jqueryval")
+}

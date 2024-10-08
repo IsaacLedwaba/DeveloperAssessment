@@ -1,0 +1,13 @@
+<publishData>
+  <publishTarget publishUrl="C:\Users\hp\Downloads\Assessment\AssessmentService\">
+    <file relUrl="bin/Data Access Layer.dll" publishTime="10/03/2024 00:35:18" />
+    <file relUrl="bin/Data Access Layer.pdb" publishTime="10/03/2024 00:35:18" />
+    <file relUrl="BusinessLogicLayer.Services.AddressService.svc" publishTime="10/03/2024 00:36:10" />
+    <file relUrl="BusinessLogicLayer.ClientService.svc" publishTime="10/03/2024 00:36:10" />
+    <file relUrl="Web.config" publishTime="10/03/2024 00:24:31" />
+    <file relUrl="BusinessLogicLayer.Services.ContactService.svc" publishTime="10/03/2024 00:36:10" />
+    <file relUrl="bin/BusinessLogicLayer.dll" publishTime="10/03/2024 00:35:46" />
+    <file relUrl="bin/BusinessLogicLayer.pdb" publishTime="10/03/2024 00:35:46" />
+    <file relUrl="bin/BusinessLogicLayer.dll.config" publishTime="10/03/2024 00:24:31" />
+  </publishTarget>
+</publishData>

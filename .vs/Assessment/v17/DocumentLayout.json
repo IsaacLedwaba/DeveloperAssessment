@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\Downloads\\Assessment\\Assessment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E1AD4B6C-4BB3-4F51-9029-2D08D50DF1B7}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\hp\\downloads\\assessment\\assessment\\businesslogiclayer\\services\\client\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1AD4B6C-4BB3-4F51-9029-2D08D50DF1B7}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\client\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A16CABF-0D1D-48C0-9E2B-815012E310A3}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\hp\\downloads\\assessment\\assessment\\presentationlayer\\views\\client\\clientlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7A16CABF-0D1D-48C0-9E2B-815012E310A3}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\client\\clientlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A16CABF-0D1D-48C0-9E2B-815012E310A3}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\hp\\downloads\\assessment\\assessment\\presentationlayer\\views\\client\\clientedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7A16CABF-0D1D-48C0-9E2B-815012E310A3}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\client\\clientedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A16CABF-0D1D-48C0-9E2B-815012E310A3}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\hp\\downloads\\assessment\\assessment\\presentationlayer\\views\\client\\clientdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7A16CABF-0D1D-48C0-9E2B-815012E310A3}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\client\\clientdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A16CABF-0D1D-48C0-9E2B-815012E310A3}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\hp\\downloads\\assessment\\assessment\\presentationlayer\\views\\client\\clientcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7A16CABF-0D1D-48C0-9E2B-815012E310A3}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\client\\clientcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1AD4B6C-4BB3-4F51-9029-2D08D50DF1B7}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\hp\\downloads\\assessment\\assessment\\businesslogiclayer\\services\\client\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1AD4B6C-4BB3-4F51-9029-2D08D50DF1B7}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\client\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D12A59AC-47F1-4FA4-80B6-2E56A51A34AE}|Data Access Layer\\DataAccessLayer.csproj|c:\\users\\hp\\downloads\\assessment\\assessment\\data access layer\\contexts\\clientcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D12A59AC-47F1-4FA4-80B6-2E56A51A34AE}|Data Access Layer\\DataAccessLayer.csproj|solutionrelative:data access layer\\contexts\\clientcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientList.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\Assessment\\Assessment\\PresentationLayer\\Views\\Client\\ClientList.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Client\\ClientList.cshtml",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\Assessment\\Assessment\\PresentationLayer\\Views\\Client\\ClientList.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Views\\Client\\ClientList.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAQwDMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-02T23:40:10.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\Assessment\\Assessment\\PresentationLayer\\Views\\Client\\ClientDetails.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Client\\ClientDetails.cshtml",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\Assessment\\Assessment\\PresentationLayer\\Views\\Client\\ClientDetails.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Views\\Client\\ClientDetails.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAC8AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-02T23:39:28.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientEdit.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\Assessment\\Assessment\\PresentationLayer\\Views\\Client\\ClientEdit.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Client\\ClientEdit.cshtml",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\Assessment\\Assessment\\PresentationLayer\\Views\\Client\\ClientEdit.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Views\\Client\\ClientEdit.cshtml",
+              "ViewState": "AQIAAIIAAAAAAAAAAAAQwJ0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-02T23:39:26.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClientCreate.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\Assessment\\Assessment\\PresentationLayer\\Views\\Client\\ClientCreate.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Client\\ClientCreate.cshtml",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\Assessment\\Assessment\\PresentationLayer\\Views\\Client\\ClientCreate.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Views\\Client\\ClientCreate.cshtml",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAAwIIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-02T23:39:09.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IClientService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\Assessment\\Assessment\\BusinessLogicLayer\\Services\\Client\\IClientService.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\Client\\IClientService.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\Assessment\\Assessment\\BusinessLogicLayer\\Services\\Client\\IClientService.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Services\\Client\\IClientService.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAswBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T23:36:55.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClientContext.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\Assessment\\Assessment\\Data Access Layer\\Contexts\\ClientContext.cs",
+              "RelativeDocumentMoniker": "Data Access Layer\\Contexts\\ClientContext.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\Assessment\\Assessment\\Data Access Layer\\Contexts\\ClientContext.cs",
+              "RelativeToolTip": "Data Access Layer\\Contexts\\ClientContext.cs",
+              "ViewState": "AQIAACgBAAAAAAAAAAAgwEIBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T23:37:02.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClientService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\Assessment\\Assessment\\BusinessLogicLayer\\Services\\Client\\ClientService.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\Client\\ClientService.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\Assessment\\Assessment\\BusinessLogicLayer\\Services\\Client\\ClientService.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Services\\Client\\ClientService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T23:36:43.747Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+﻿@model PresentationLayer.ViewModels.ClientViewModel
+
+@{
+    ViewBag.Title = "Create Client";
+}
+
+<h2>Create Client</h2>
+
+<div>
+    @Html.ActionLink("Back to List", "ClientList")
+</div>
+
+@using (Html.BeginForm("Create", "Client", FormMethod.Post))
+{
+    <h3>Client Information</h3>
+    <div>
+        @Html.LabelFor(m => m.ClientName)
+        @Html.TextBoxFor(m => m.ClientName, new { @class = "form-control" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.OtherDetails)
+        @Html.TextBoxFor(m => m.OtherDetails, new { @class = "form-control" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Gender)
+        @Html.TextBoxFor(m => m.Gender, new { @class = "form-control" })
+    </div>
+
+    <!-- Section for Addresses -->
+    <h3>Addresses</h3>
+    <div id="address-container">
+        @for (int i = 0; i < Model.Addresses.Count; i++)
+        {
+            <div class="address-item">
+                @Html.Label("Address Type")
+                @Html.TextBoxFor(m => m.Addresses[i].AddressType, new { @class = "form-control" })
+
+                @Html.Label("Street")
+                @Html.TextBoxFor(m => m.Addresses[i].Street, new { @class = "form-control" })
+
+                @Html.Label("City")
+                @Html.TextBoxFor(m => m.Addresses[i].City, new { @class = "form-control" })
+
+                @Html.Label("Postal Code")
+                @Html.TextBoxFor(m => m.Addresses[i].PostalCode, new { @class = "form-control" })
+
+                <button type="button" class="btn btn-danger" onclick="removeAddress(this)">Remove</button>
+            </div>
+        }
+    </div>
+
+    <button type="button" class="btn btn-success" onclick="addAddress()">Add Address</button>
+
+    <!-- Section for Contacts -->
+    <h3>Contact Information</h3>
+    <div id="contact-container">
+        @for (int i = 0; i < Model.Contacts.Count; i++)
+        {
+            <div class="contact-item">
+                @Html.Label("Contact Type")
+                @Html.TextBoxFor(m => m.Contacts[i].ContactType, new { @class = "form-control" })
+
+                @Html.Label("Contact Value")
+                @Html.TextBoxFor(m => m.Contacts[i].ContactNumber, new { @class = "form-control" })
+
+                <button type="button" class="btn btn-danger" onclick="removeContact(this)">Remove</button>
+            </div>
+        }
+    </div>
+
+    <button type="button" class="btn btn-success" onclick="addContact()">Add Contact</button>
+
+    <input type="submit" value="Submit" class="btn btn-primary" />
+}
+
+
+@section Scripts {
+
+    <script type="text/javascript">
+        function addAddress() {
+            var container = document.getElementById("address-container");
+            var count = container.getElementsByClassName("address-item").length;
+            var newField = `
+                <div class="address-item">
+                    <label>Address Type</label>
+                    <input type="text" name="Addresses[` + count + `].AddressType" class="form-control" />
+
+                    <label>Street</label>
+                    <input type="text" name="Addresses[` + count + `].Street" class="form-control" />
+
+                    <label>City</label>
+                    <input type="text" name="Addresses[` + count + `].City" class="form-control" />
+
+                    <label>Postal Code</label>
+                    <input type="text" name="Addresses[` + count + `].PostalCode" class="form-control" />
+
+                    <button type="button" class="btn btn-danger" onclick="removeAddress(this)">Remove</button>
+                </div>
+            `;
+            container.insertAdjacentHTML("beforeend", newField);
+        }
+
+        function removeAddress(button) {
+            button.parentElement.remove();
+        }
+
+        function addContact() {
+            var container = document.getElementById("contact-container");
+            var count = container.getElementsByClassName("contact-item").length;
+            var newField = `
+                <div class="contact-item">
+                    <label>Contact Type</label>
+                    <input type="text" name="Contacts[` + count + `].ContactType" class="form-control" />
+
+                    <label>Contact Value</label>
+                    <input type="text" name="Contacts[` + count + `].ContactNumber" class="form-control" />
+
+                    <button type="button" class="btn btn-danger" onclick="removeContact(this)">Remove</button>
+                </div>
+            `;
+            container.insertAdjacentHTML("beforeend", newField);
+        }
+
+        function removeContact(button) {
+            button.parentElement.remove();
+        }
+    </script>
+
+    @Scripts.Render("~/bundles/jqueryval")
+}
